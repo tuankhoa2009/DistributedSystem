@@ -102,11 +102,6 @@ app.MapCarter();
 try
 {
 
- var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
- //app.Urls.Add($"http://*:{port}");
- app.Urls.Add($"http://0.0.0.0:{port}"); 
-
-
  await app.RunAsync();
 Log.Information("Stopped cleanly");
 }
